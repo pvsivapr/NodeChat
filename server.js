@@ -1,7 +1,7 @@
 var express = require('express');//Importing Express
 var app = express();//Getting App From Express
 var fs = require('fs');//Importing File System Module To Access Files
-const port = 8080;//Creating A Constant For Providing The Port
+const port = process.env.PORT || 3000;//8080;//Creating A Constant For Providing The Port
 //Routing Request : http://localhost:port/
 app.get('/',function(request,response){
   //Telling Browser That The File Provided Is A HTML File
